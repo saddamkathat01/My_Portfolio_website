@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Header</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+</head>
+
+<body>
+
+  <!-- Sticky Navbar with Theme Toggle -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top glass-effect">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="Media/logo11.png" alt="logo image" class="img-fluid">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNav"
+        aria-controls="mobileNav">
+        <i class="fa-solid fa-bars-staggered"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <!-- <li class="nav-item"><a class="nav-link" href="#tools">My tools</a></li> -->
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonianl">Testimonials</a></li>
+        </ul>
+        <button id="theme-toggle" class="btn btn-outline-light ms-2">🌙 Mode</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Off-Canvas Navbar for Mobile -->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileNav">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel"><img src="Media/logo11.png" alt="logo image" class="img-fluid">
+      </h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <!-- <li class="nav-item"><a class="nav-link" href="#tools">My tools</a></li> -->
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="#testimonianl">Testimonials</a></li>
+      </ul>
+      <button id="theme-toggle-mobile" class="btn btn-outline-dark w-100 mt-3">🌙 Mode</button>
+    </div>
+  </div>
+  <!-- Hero Section -->
+  <header class="hero" id="home">
+    <div class="hero-content ">
+      <div class="text-container">
+        <h1 class="display-4">Hello, I'm Saddam kathat</h1>
+        <p class="lead"><span id="typing-effect"></span></p>
+        <a href="#projects" class="btn btn-primary mt-3">View My Work</a>
+        <a target='new' href="https://www.canva.com/design/DAGVynQpWnU/ItcCWjWkD1eFc60qHfXGlg/view?utm_content=DAGVynQpWnU&utm_campaign=designshare&utm_medium=link&utm_source=editor" class="btn btn-primary mt-3">Resume</a>
+      </div>
+      <div class="hero-image-container" id="heroImageContainer">
+        <img src="Media/MyImgcrop-removebg1.png" alt="Saddam kathat" class="hero-image" id="heroImage">
+      </div>
+    </div>
+  </header>
+  <!-- about me  -->
+   <section class="about-me-section" id="about">
+    <div class="about-me-container">
+        <!-- Profile Image -->
+        <div class="about-me-image">
+            <img src="Media/My1.png" alt="Your Name" class="profile-img">
+        </div>
+
+        <!-- Description and Details -->
+        <div class="about-me-content">
+            <h2 class="section-title1 ">About Me</h2>
+            <p class="about-me-text">
+                Hello! I’m Saddam kathat, a passionate web developer with expertise in creating dynamic, user-friendly web applications. My journey in tech has been fueled by my love for innovative designs and cutting-edge technology. Let’s make something amazing together!
+            </p>
+
+            <!-- Highlighted Stats or Skills -->
+            <div class="about-me-highlights">
+                <div class="highlight-item">
+                    <span class="highlight-value">1+</span>
+                    <span class="highlight-label">Years of Experience</span>
+                </div>
+                <div class="highlight-item">
+                    <span class="highlight-value">10+</span>
+                    <span class="highlight-label">Projects Completed</span>
+                </div>
+                <div class="highlight-item">
+                    <span class="highlight-value">HTML, CSS, JS</span>
+                    <span class="highlight-label">Primary Skills</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <!-- skill section -->
+  <section class="text-center skill" id="skills">
+    <h2 class="section-title-skill">Skills & tools</h2>
+    <div class="hex-grid">
+
+      <div class="hex-tile" data-skill="html">
+        <div class="hex-inner">
+          <div class="hex-front">
+            <i class="fa-brands fa-html5 skill-icon"></i>
+            <span class="skill-name">HTML</span>
+          </div>
+          <div class="hex-back">
+            <span class="skill-details">Proficiency: Advanced</span>
+            <span class="experience">2+ Years</span>
+          </div>
+        </div>
+      </div>
+      <div class="hex-tile" data-skill="python">
+        <div class="hex-inner">
+          <div class="hex-front">
+            <i class="fa-brands fa-python skill-icon"></i>
+            <span class="skill-name">Python</span>
+          </div>
+          <div class="hex-back">
+            <span class="skill-details">Proficiency: Intermediate</span>
+            <span class="experience">2+ Years</span>
+          </div>
+        </div>
+      </div>
+      <div class="hex-tile" data-skill="java">
+        <div class="hex-inner">
+          <div class="hex-front">
+            <i class="fa-brands fa-java skill-icon"></i>
+            <span class="skill-name">Java</span>
+          </div>
+          <div class="hex-back">
+            <span class="skill-details">Proficiency: Intermediate</span>
+            <span class="experience">1+ Years</span>
+          </div>
+        </div>
+      </div>
+      <div class="hex-tile" data-skill="python">
+        <div class="hex-inner">
+          <div class="hex-front">
+            <i class="fa-brands fa-php skill-icon"></i>
+            <span class="skill-name">PHP</span>
+          </div>
+          <div class="hex-back">
+            <span class="skill-details">Proficiency: Intermediate</span>
+            <span class="experience">2+ Years</span>
+          </div>
+        </div>
+      </div>
+      <div class="hex-tile" data-skill="python">
+        <div class="hex-inner">
+          <div class="hex-front">
+            <i class="fa-brands fa-react skill-icon"></i>
+            <span class="skill-name">React js</span>
+          </div>
+          <div class="hex-back">
+            <span class="skill-details">Proficiency: begginer</span>
+            <span class="experience">learning</span>
+          </div>
+        </div>
+      </div>
+      <div class="hex-tile" data-skill="php">
+
+        <div class="hex-inner">
+          <div class="hex-front">
+            <i class="fa-brands fa-node skill-icon"></i>
+            <span class="skill-name">Node Js</span>
+          </div>
+          <div class="hex-back">
+            <span class="skill-details">Proficiency: begginer</span>
+            <span class="experience">learning</span>
+          </div>
+        </div>
+      </div>
+      <!-- Repeat for Java, C/C++, PHP, etc. -->
+    </div>
+  </section>
+  <!-- tools section -->
+  <div class="tools-section">
+    <h2 class="text-center py-3 section-title">My Tools</h2>
+
+    <!-- Optional Category Tabs -->
+    <div class="tool-tabs">
+      <button data-category="all">All</button>
+      <button data-category="design">Design</button>
+      <button data-category="development">Development</button>
+    </div>
+    <div class="tool-grid">
+
+      <div class="tool-item" data-category="design">
+        <div class="tool-icon">
+          <img src="Media/adobe.png" alt="VS Code">
+        </div>
+        <span class="tool-name">Adobe</span>
+      </div>
+
+      <div class="tool-item" data-category="design">
+        <div class="tool-icon">
+          <img src="Media/canva.png" alt="VS Code">
+        </div>
+        <span class="tool-name">Canva</span>
+      </div>
+
+      <div class="tool-item" data-category="design">
+        <div class="tool-icon">
+          <img src="Media/figma.png" alt="VS Code">
+        </div>
+        <span class="tool-name">Figma</span>
+      </div>
+      <div class="tool-item" data-category="development">
+        <div class="tool-icon">
+          <img src="Media/vs.png" alt="VS Code">
+        </div>
+        <span class="tool-name">VS Code</span>
+      </div>
+      <div class="tool-item" data-category="development">
+        <div class="tool-icon">
+          <img src="Media/git.png" alt="VS Code">
+        </div>
+        <span class="tool-name">Git BAsh</span>
+      </div>
+      <div class="tool-item" data-category="development">
+        <div class="tool-icon">
+          <img src="Media/mysql.png" alt="VS Code">
+        </div>
+        <span class="tool-name">MySql</span>
+      </div>
+      <div class="tool-item" data-category="development">
+        <div class="tool-icon">
+          <img src="Media/sublime.png" alt="VS Code">
+        </div>
+        <span class="tool-name">Sublime </span>
+      </div>
+    </div>
+  </div>
+   <!-- project section -->
+  <section class="projects-section" id="projects">
+    <h2 class="section-title-pr py-3 mb-4">Projects</h2>
+    <div class="projects-grid p-5">
+      <div class="project-card" data-category="web">
+        <img src="Media/home_glass.png" alt="Project 1" class="project-image">
+        <div class="overlay">
+          <h3 class="project-title">Social media company site</h3>
+          <p class="project-description">this project made by html,css,bootstrap</p>
+          <a href="https://saddamkathat01.github.io/SocialMedia_managment_site/" class="view-btn" target="_blank">View Project</a>
+          <a href="https://github.com/saddamkathat01/SocialMedia_managment_site/" class="github-btn" target="_blank">GitHub</a>
+        </div>
+      </div>
+      <div class="project-card" data-category="web">
+        <img src="Media/tech_bharta.png" alt="Project 1" class="project-image">
+        <div class="overlay">
+          <h3 class="project-title">Tech bharta website</h3>
+          <p class="project-description">this project made by bootsrap 5.3.3</p>
+          <a href="[Live URL]" class="view-btn" target="_blank">working</a>
+          <a href="[GitHub URL]" class="github-btn" target="_blank">GitHub</a>
+        </div>
+      </div>
+      <div class="project-card" data-category="web">
+        <img src="Media/techbharta2.png" alt="Project 1" class="project-image">
+        <div class="overlay">
+          <h3 class="project-title">techbahrta website</h3>
+          <p class="project-description">this project made using Wordpress </p>
+          <a href="https://techbharta.com/" class="view-btn" target="_blank">View Project</a>
+          <a href="[GitHub URL]" class="github-btn" target="_blank">GitHub</a>
+        </div>
+      </div>
+      <div class="project-card" data-category="web">
+        <img src="Media/jspro.png" alt="Project 1" class="project-image">
+        <div class="overlay">
+          <h3 class="project-title">A talking boat</h3>
+          <p class="project-description">this project is made by Ecmascript 6/js</p>
+          <a href="[Live URL]" class="view-btn" target="_blank">View Project</a>
+          <a href="[GitHub URL]" class="github-btn" target="_blank">GitHub</a>
+        </div>
+      </div>
+      <div class="project-card" data-category="web">
+        <img src="Media/plumbing.png" alt="Project 1" class="project-image">
+        <div class="overlay">
+          <h3 class="project-title">the plumbing copany</h3>
+          <p class="project-description">this website made in php,js,bootstrap</p>
+          <a href="[Live URL]" class="view-btn" target="_blank">View Project</a>
+          <a href="[GitHub URL]" class="github-btn" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- contaact section-->
+  <section class="contact-section" id="contact">
+    <div class="contact-bg"></div>
+
+    <div class="contact-container">
+      <h2 class="section-title">Get in Touch</h2>
+
+      <form class="contact-form">
+        <div class="form-field">
+          <i class="form-icon"><i class="fa fa-user-circle" aria-hidden="true"></i></i>
+          <input type="text" placeholder="Your Name" class="input-field">
+        </div>
+        <div class="form-field">
+          <i class="form-icon"><i class="fa fa-envelope" aria-hidden="true"></i></i>
+          <input type="email" placeholder="Your Email" class="input-field">
+        </div>
+        <div class="form-field">
+          <i class="form-icon"><i class="fa fa-phone" aria-hidden="true"></i></i>
+          <input type="tel" placeholder="Your Contact Number" class="input-field">
+        </div>
+        <textarea  class="form-field" placeholder="Your Message" class="input-field"></textarea>
+        <button type="submit" class="submit-button">Send Message</button>
+      </form>
+
+      <div class="social-icons">
+        <a href="#" class="social-icon"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
+        <a href="#" class="social-icon"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
+        <a href="#" class="social-icon"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </section>
+   <!-- testimonial section -->
+   <section class="achievements-testimonials-section" id="testimonianl">
+    <h2 class="section-title-se">Our Journey & Stories</h2>
+
+    <div class="split-container">
+      <!-- Achievements Section -->
+      <div class="split-left">
+        <div class="achievement-card">
+          <i class="achievement-icon">🏅</i>
+          <h3 class="achievement-title">Achieve Third position</h3>
+          <p class="achievement-description">2024 - i achieve third postion in my regular monthly exam, thats exam is based on js,php,java</p>
+        </div>
+        <!-- Repeat cards for each achievement -->
+      </div>
+      
+      <!-- Testimonials Section -->
+      <div class="split-right">
+        <div class="testimonial-carousel">
+          <div class="testimonial-card">
+            <p class="testimonial-text">"acieve a certificate from star infotech college ajmer "</p>
+            <p class="testimonial-author">by Abdul sir</p>
+          </div>
+          <!-- Repeat for each testimonial -->
+        </div>
+      </div>
+      <div class="split-left">
+        <div class="achievement-card">
+          <i class="achievement-icon">🏅</i>
+          <h3 class="achievement-title">gain many certificate</i></h3>
+          <p class="achievement-description">2023 - i achieve many certificate in c,css,html,Seo optimistion</p>
+        </div>
+        <!-- Repeat cards for each achievement -->
+      </div>
+      <div class="split-right">
+        <div class="testimonial-carousel">
+          <div class="testimonial-card">
+            <p class="testimonial-text">"certifieid by  my tech company and institude for my best performance !"</p>
+            <p class="testimonial-author">tech institutes</p>
+          </div>
+          <!-- Repeat for each testimonial -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer-section">
+    <div class="footer-container">
+        <!-- Quick Links -->
+        <div class="footer-column quick-links">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-column contact-info">
+            <h4>Contact</h4>
+            <p>Email: <a href="mailto:saddamkathat219@gmail.com">saddamkathat219@gmail.com</a></p>
+            <p>Phone: <a href="tel:+9116753493">+91 7877273718</a></p>
+        </div>
+
+        <!-- Social Media Icons -->
+        <div class="footer-column social-icons">
+            <h4>Follow Me</h4>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Copyright Section -->
+    <div class="footer-bottom">
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </div>
+</footer>
+
+
+
+  
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"></script>
+</body>
+
+</html>
